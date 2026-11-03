@@ -12,7 +12,7 @@ void read(struct student s[], int n)
  int i;
  for(i=0; i<n; i++)
  {
-  printf("\nenter student %d details\n",i+1);
+  printf("\nEnter student %d details\n",i+1);
 
   printf("Name:");
   scanf("%s",s[i].name);
@@ -35,12 +35,12 @@ void write(struct student s[],int n)
   int i;
   for(i=0;i<n;i++)
   {
-   printf("\nstudent %d details\n",i+1);
-   printf("name: %s\n",s[i].name);
-   printf("roll number:%d\n", s[i].rollno);
-   printf("mark:%d\n",s[i].mark);
-   printf("city:%s\n",s[i].city);
-   printf("dream:%s\n",s[i].dream);
+   printf("\nStudent %d details\n",i+1);
+   printf("Name: %s\n",s[i].name);
+   printf("Roll number:%d\n", s[i].rollno);
+   printf("Mark:%d\n",s[i].mark);
+   printf("City:%s\n",s[i].city);
+   printf("Dream:%s\n",s[i].dream);
   }
 }
 int main()
@@ -48,7 +48,7 @@ int main()
   struct student s[100];
   int n;
 
-  printf("enter number of students:");
+  printf("Enter the number of students:");
   scanf("%d",&n);
 
  if (n<1 || n>100)
