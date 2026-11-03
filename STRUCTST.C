@@ -14,19 +14,19 @@ void read(struct student s[], int n)
  {
   printf("\nenter student %d details\n",i+1);
 
-  printf("name:");
+  printf("Name:");
   scanf("%s",s[i].name);
 
-  printf("roll number:");
+  printf("Roll number:");
   scanf("%d",&s[i].rollno);
 
-  printf("mark:");
+  printf("Mark:");
   scanf("%d",&s[i].mark);
 
-  printf("city:");
+  printf("City:");
   scanf("%s",s[i].city);
 
-  printf("dream:");
+  printf("Dream:");
   scanf("%s",s[i].dream);
  }
 }
@@ -51,11 +51,11 @@ int main()
   printf("enter number of students:");
   scanf("%d",&n);
 
- /* if (n<1 || n>100)
+ if (n<1 || n>100)
   {
    printf("invalid number of students!\n");
    return 1;
-  }*/
+  }
   read(s,n);
   write(s,n);
   return 0;
